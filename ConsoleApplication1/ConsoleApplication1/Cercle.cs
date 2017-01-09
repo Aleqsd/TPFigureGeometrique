@@ -24,13 +24,17 @@ namespace ConsoleApplication1
             }
         }
 
+        public Cercle(double rayon)
+        {
+            _rayon = rayon;
+        }
 
         public Cercle(double x, double y, double rayon) : base(x,y)
         {
             _rayon = rayon;
         }
 
-        public new double Surface()
+        public override double Surface()
         {
             return (_rayon * _rayon) * Math.PI;
         }

@@ -37,13 +37,19 @@ namespace ConsoleApplication1
             }
         }
 
+        public Rectangle(double longueur, double largeur)
+        {
+            _longueur = longueur;
+            _largeur = largeur;
+        }
+
         public Rectangle(double x, double y, double longueur, double largeur) : base(x,y)
         {
             _longueur = longueur;
             _largeur = largeur;
         }
 
-        public new double Surface()
+        public override double Surface()
         {
             return _longueur * _largeur;
         }

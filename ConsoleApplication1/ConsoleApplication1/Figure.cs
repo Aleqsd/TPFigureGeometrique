@@ -8,8 +8,8 @@ namespace ConsoleApplication1
 {
     class Figure
     {
-        private double _x;
-        private double _y;
+        private double _x = 1;
+        private double _y = 1;
 
         public double Y
         {
@@ -39,8 +39,7 @@ namespace ConsoleApplication1
 
         public Figure()
         {
-            _x = 1;
-            _y = 1;
+
         }
 
         public Figure(double x, double y)
@@ -49,7 +48,7 @@ namespace ConsoleApplication1
             _y = y;
         }
 
-        public double Surface()
+        public virtual double Surface()
         {
             return 0;
         }
