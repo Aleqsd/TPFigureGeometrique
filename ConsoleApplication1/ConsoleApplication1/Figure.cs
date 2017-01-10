@@ -55,7 +55,7 @@ namespace ConsoleApplication1
 
         public void Informations()
         {
-            Console.WriteLine("La figure est centrée en : \n x : " + this._x + "\ny : " + this._y);
+            Console.WriteLine("Le "+this.ToString().Substring(this.ToString().LastIndexOf('.') + 1) +" est centré en : \nx : " + this._x + "\ny : " + this._y);
         }
     }
 }

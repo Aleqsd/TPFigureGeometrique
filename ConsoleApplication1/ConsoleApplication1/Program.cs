@@ -18,10 +18,11 @@ namespace ConsoleApplication1
             Figures[0] = new Cercle(10);
             Figures[1] = new Rectangle(3, 4, 15, 10);
 
-            Console.WriteLine("Le cercle centré au point : " + Figures[0].X + ";" + Figures[0].Y);
+            
+            Figures[0].Informations();
             Console.WriteLine("A une surface de " + String.Format("{0:0.00}",Figures[0].Surface()));
 
-            Console.WriteLine("Le rectangle centré au point : " + Figures[1].X + ";" + Figures[1].Y);
+            Figures[1].Informations();
             Console.WriteLine("A une surface de " + String.Format("{0:0.00}",Figures[1].Surface()));
             double surfaceTotale = Figures[0].Surface() + Figures[1].Surface();
             Console.WriteLine("La surface totale de toutes les figures est : " + String.Format("{0:0.00}",surfaceTotale));
@@ -34,10 +35,10 @@ namespace ConsoleApplication1
             Figures2.Add(new Cercle(10));
             Figures2.Add(new Rectangle(3, 4, 15, 10));
 
-            Console.WriteLine("Le cercle centré au point : " + Figures[0].X + ";" + Figures[0].Y);
+            Figures2[0].Informations();
             Console.WriteLine("A une surface de " + String.Format("{0:0.00}", Figures[0].Surface()));
 
-            Console.WriteLine("Le rectangle centré au point : " + Figures[1].X + ";" + Figures[1].Y);
+            Figures2[1].Informations();
             Console.WriteLine("A une surface de " + String.Format("{0:0.00}", Figures[1].Surface()));
             Console.WriteLine("La surface totale de toutes les figures est : " + String.Format("{0:0.00}", surfaceTotale));
 
