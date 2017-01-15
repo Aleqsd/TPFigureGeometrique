@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// Developed by :
+// Alexandre DO-O ALMEIDA
+// Louis BEAUMONT
+// 16/01/2017
 
 namespace ClassLibrary
 {
+    // Classe publique afin d'être utilisée dans notre projet ConsoleApplication
     public class Rectangle : Figure
     {
         private double _longueur;
