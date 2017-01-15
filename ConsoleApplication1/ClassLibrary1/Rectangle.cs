@@ -11,7 +11,7 @@ namespace ClassLibrary
         private double _longueur;
         private double _largeur;
 
-        public double Longueur
+        public double Longueur // Accesseur pour l'attribut _longueur
         {
             get
             {
@@ -24,7 +24,7 @@ namespace ClassLibrary
             }
         }
 
-        public double Largeur
+        public double Largeur // Accesseur pour l'attribut _largeur
         {
             get
             {
@@ -37,19 +37,19 @@ namespace ClassLibrary
             }
         }
 
-        public Rectangle(double longueur, double largeur)
+        public Rectangle(double longueur, double largeur) // Constructeur initialisant _longueur et _largeur
         {
             _longueur = longueur;
             _largeur = largeur;
         }
 
-        public Rectangle(double x, double y, double longueur, double largeur) : base(x,y)
+        public Rectangle(double x, double y, double longueur, double largeur) : base(x,y) // Constructeur avancé
         {
             _longueur = longueur;
             _largeur = largeur;
         }
 
-        public override double Surface()
+        public override double Surface() // Calcul de la surface S = L * l
         {
             return _longueur * _largeur;
         }

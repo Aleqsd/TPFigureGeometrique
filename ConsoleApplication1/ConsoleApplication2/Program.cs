@@ -19,14 +19,15 @@ namespace ConsoleApplication2
             // Avec un tableau
             Console.WriteLine("Avec un tableau : ");
             Console.WriteLine("");
-            Figure[] Figures = new Figure[2];
-            Figures[0] = new Cercle(10);
-            Figures[1] = new Rectangle(3, 4, 15, 10);
+            Figure[] Figures = new Figure[2]; // Création d'un tableau de Figure de taille 2
+            Figures[0] = new Cercle(10); // Ajout d'un Cercle de rayon 10 en première position du tableau
+            Figures[1] = new Rectangle(3, 4, 15, 10); // Ajout d'un Rectangle en (3;4) de taille 15 sur 10
+            // en deuxième position du tableau
 
-            Figures[0].Informations();
+            Figures[0].Informations(); // Affichage des coordonnées
             Console.WriteLine("A une surface de " + String.Format("{0:0.00}", Figures[0].Surface()));
 
-            Figures[1].Informations();
+            Figures[1].Informations(); // Affichage des coordonnées
             Console.WriteLine("A une surface de " + String.Format("{0:0.00}", Figures[1].Surface()));
             double surfaceTotale = Figures[0].Surface() + Figures[1].Surface();
             Console.WriteLine("La surface totale de toutes les figures est : " + String.Format("{0:0.00}", surfaceTotale));

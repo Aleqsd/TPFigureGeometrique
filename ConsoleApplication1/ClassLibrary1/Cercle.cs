@@ -13,7 +13,7 @@ namespace ClassLibrary
         private double _rayon;
 
 
-        public double Rayon
+        public double Rayon // Accesseur pour l'attribut _rayon
         {
             get
             {
@@ -26,17 +26,17 @@ namespace ClassLibrary
             }
         }
 
-        public Cercle(double rayon)
+        public Cercle(double rayon) // Constructeur avec seulement l'attribut _rayon
         {
             _rayon = rayon;
         }
 
-        public Cercle(double x, double y, double rayon) : base(x,y)
+        public Cercle(double x, double y, double rayon) : base(x,y) // Constructeur avancé
         {
             _rayon = rayon;
         }
 
-        public override double Surface()
+        public override double Surface() // Calcul de la surface S = R² * PI
         {
             return (_rayon * _rayon) * Math.PI;
         }
